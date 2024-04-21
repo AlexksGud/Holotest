@@ -2,6 +2,8 @@
 
 public class PlayerTvLocator :MonoBehaviour
 {
+    public Transform scene;
+
     public TV[] screens;
     public bool deleteTool = false;
 
@@ -46,6 +48,18 @@ public class PlayerTvLocator :MonoBehaviour
 
         newTv.transform.position = wall.transform.position;
         newTv.SetWall(wall.televisionRotationAngle, wall.xorZWallFixedCoor,this);
+    }
+
+    public void MoveDown() 
+    {
+        var p = scene.transform.position;
+        scene.transform.position = new Vector3(p.x, p.y - 0.1f,p.z);
+    }
+
+    public void MoveUp()
+    {
+        var p = scene.transform.position;
+        scene.transform.position = new Vector3(p.x, p.y + 0.1f, p.z);
     }
 }
 
