@@ -10,9 +10,8 @@ Material:
   m_Name: Mat
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
   m_ValidKeywords:
-  - _DIRECTIONAL_LIGHT
   - _DISABLE_ALBEDO_MAP
-  - _HOVER_LIGHT
+  - _METALLIC_TEXTURE_ALBEDO_CHANNEL_A
   - _SPECULAR_HIGHLIGHTS
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -95,7 +94,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlbedoAlphaMode: 0
+    - _AlbedoAlphaMode: 1
     - _AlbedoAssignedAtRuntime: 0
     - _BlendOp: 0
     - _BlendedClippingWidth: 1
@@ -114,7 +113,7 @@ Material:
     - _CustomMode: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
+    - _DirectionalLight: 0
     - _DstBlend: 0
     - _EdgeSmoothingValue: 0.002
     - _EnableChannelMap: 0
@@ -136,7 +135,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HoverLight: 1
+    - _HoverLight: 0
     - _IgnoreZScale: 0
     - _IndependentCorners: 0
     - _InnerGlow: 0
@@ -168,7 +167,7 @@ Material:
     - _RoundCornerRadius: 0.25
     - _RoundCorners: 0
     - _Shift_: 0
-    - _Smoothness: 0.5
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SphericalHarmonics: 0

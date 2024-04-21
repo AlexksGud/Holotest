@@ -25,6 +25,10 @@ public class TV : MonoBehaviour
                 boxCol.enabled = false;
         }
     }
+    private void Update()
+    {
+        
+    }
 
     public void SetWall(float rot,XorZWallFixedCoor XorZ, PlayerTvLocator player) 
     {
