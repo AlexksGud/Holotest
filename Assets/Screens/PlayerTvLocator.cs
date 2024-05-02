@@ -47,7 +47,7 @@ public class PlayerTvLocator :MonoBehaviour
         var newTv = Instantiate(_selected);
 
         newTv.transform.position = wall.transform.position;
-        newTv.SetWall(wall.televisionRotationAngle, wall.xorZWallFixedCoor,this);
+        newTv.SetWall(wall.transform.rotation.eulerAngles.y, wall.xorZWallFixedCoor,this);
     }
 
     public void MoveDown() 
